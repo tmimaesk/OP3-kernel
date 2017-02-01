@@ -682,7 +682,7 @@ static int __qpnpint_handle_irq(struct spmi_controller *spmi_ctrl,
 				irq, spec->slave, spec->per, spec->irq, name);
 		if(strstr(name, "qpnp_kpdpwr_status") != NULL)//qpnp_kpdpwr_status
 	    {
-		    sched_set_boost(1);
+		    //sched_set_boost(1);
 	    }
 	} else {
 		generic_handle_irq(irq);

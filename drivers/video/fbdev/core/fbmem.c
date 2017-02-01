@@ -1111,7 +1111,7 @@ fb_blank(struct fb_info *info, int blank)
 			debug_blank(blank,0);
 	if(blank==FB_BLANK_UNBLANK)
 	{
-		sched_set_boost(0);
+		//sched_set_boost(0);
 	}
 
  	return ret;

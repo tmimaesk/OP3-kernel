@@ -872,7 +872,7 @@ static void msm_gpio_irq_handler(unsigned int irq, struct irq_desc *desc)
 							log_wakeup_reason(irq_pin);
 							if(strstr(irq_to_desc(irq_pin)->action->name, "soc:fpc_fpc1020") != NULL) //fpc_fpc1020
 							{
-								sched_set_boost(1);
+								//sched_set_boost(1);
 							}
                         }
                         //--

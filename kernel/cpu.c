@@ -559,7 +559,7 @@ int disable_nonboot_cpus(void)
 	cpumask_clear(frozen_cpus);
 
 	pr_info("Disabling non-boot CPUs ...\n");
-	sched_set_boost(0);
+	//sched_set_boost(0);
 	for_each_online_cpu(cpu) {
 		if (cpu == first_cpu)
 			continue;
